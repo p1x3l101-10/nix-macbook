@@ -12,6 +12,10 @@ in lib.mkFlake {
   supportedSystems = [ "aarch64-darwin" ];
   outputs-builder = channels: {
     formatter = channels.nixpkgs.nixpkgs-fmt;
+    packages = {
+      inherit (inputs.home-manager.packages.aarch64-darwin) home-manager;
+      inherit (inputs.nix-darwin.packages.aarch64-darwin) darwin-rebuild;
+    };
   };
   channels-config = {
     contentAddressedByDefault = true;
@@ -21,4 +25,6 @@ in lib.mkFlake {
     allowUnfreePredicate = pkg: builtins.elem (inputs.nixpkgs.lib.getName pkg) [
     ];
   };
+} // {
+  nixConfig = (import ./modules/home/base/nix.nix { inherit inputs lib; pkgs = {}; }).nix.settings;
 }

@@ -43,4 +43,9 @@
     };
   };
   outputs = inputs: import ./outputs.nix inputs;
+  nixConfig = {
+    experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
+    cores = 2;
+      max-jobs = 4;
+  };
 }

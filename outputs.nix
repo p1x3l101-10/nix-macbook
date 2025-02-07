@@ -25,6 +25,4 @@ in lib.mkFlake {
     allowUnfreePredicate = pkg: builtins.elem (inputs.nixpkgs.lib.getName pkg) [
     ];
   };
-} // {
-  nixConfig = (import ./modules/home/base/nix.nix { inherit inputs lib; pkgs = {}; }).nix.settings;
 }

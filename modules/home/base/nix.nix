@@ -11,6 +11,9 @@ in {
     settings = {
       experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
       substituters = lib.mkForce []; # Diff nix store dir
+      # Jobs w/ 2 cores each, for 8 cores used in total
+      cores = 2;
+      max-jobs = 4;
     };
   };
 }

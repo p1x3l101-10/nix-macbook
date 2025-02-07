@@ -288,11 +288,11 @@
     "homebrew-bundle": {
       "flake": false,
       "locked": {
-        "lastModified": 1738745362,
-        "narHash": "sha256-6wAOlWN3YVUgi/pWXR1FBoY1Rp9bt97I5jrLZHwigzY=",
+        "lastModified": 1738945391,
+        "narHash": "sha256-Dwbas0g5VD/qdJwGMEs9N4GbeEgmyDshw72oPLEOo/Q=",
         "owner": "homebrew",
         "repo": "homebrew-bundle",
-        "rev": "de1a4ebabdc44daa7136f0f33e357133626154b1",
+        "rev": "a72114bff5a89a80098455baa2a0f04badaf8842",
         "type": "github"
       },
       "original": {
@@ -304,11 +304,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1738814404,
-        "narHash": "sha256-2TyIbjwt8i1rGCeZ1W565nQsLKtvDUoBuxq7YuzcfLM=",
+        "lastModified": 1738958862,
+        "narHash": "sha256-6uRyB7xqK8awgEgwgh7qOnOr8t015DHJArkcO6ORlrM=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "07f0183df12805440c66b7dd1c159eaab1b9cbe6",
+        "rev": "3112e666f0181acb9d3f5b7a06fb7af67840b56a",
         "type": "github"
       },
       "original": {
@@ -320,11 +320,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1738814362,
-        "narHash": "sha256-hP+GFcJBe3k5Lb4dwqB3Pm4Q/FHZ0tXMaDH2mb69LGI=",
+        "lastModified": 1738958728,
+        "narHash": "sha256-yVFJ/S6ru4Ck9vA6G4j7nmnySYwUxBTK8W7Gx/jgpq8=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "476b078191a9258e79d29d0609f7fd2bcd39fd80",
+        "rev": "cfdede521487ff686ef64fb7345b8de0e0c815ed",
         "type": "github"
       },
       "original": {
@@ -352,11 +352,11 @@
     "homebrew-services": {
       "flake": false,
       "locked": {
-        "lastModified": 1738746036,
-        "narHash": "sha256-z2rP5uLdAk+qntSDKFkppiDc++rFUVB8pijWvxvO3WI=",
+        "lastModified": 1738919295,
+        "narHash": "sha256-XKJGpzECcJCvLnjg//kXdT+/6zx9eAi7i+SlTqmKG6A=",
         "owner": "homebrew",
         "repo": "homebrew-services",
-        "rev": "9de0a23b928f161951a1a30782b16f0c399210cf",
+        "rev": "c16ce2e39c71b904c5dcc80c3491700159586981",
         "type": "github"
       },
       "original": {
@@ -519,11 +519,11 @@
         "snowfall-lib": "snowfall-lib"
       },
       "locked": {
-        "lastModified": 1738957363,
-        "narHash": "sha256-17QqWj0nEqfksRaWdRCUHWXQTQsSbh/RsaSud/pWNVc=",
+        "lastModified": 1738959405,
+        "narHash": "sha256-K8Afcq/KbKRUlVTNOCf250a28udiUBPsBO0nYFyQ0+A=",
         "owner": "p1x3l101-10",
         "repo": "nixos",
-        "rev": "9b0f1ad18243835f9d10761ed1d21aff1af99b68",
+        "rev": "4bddd67a0ad5e8fae3958aeb86b9bf0159c96eeb",
         "type": "github"
       },
       "original": {

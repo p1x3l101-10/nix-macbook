@@ -12,9 +12,9 @@ in lib.mkFlake {
   supportedSystems = [ "aarch64-darwin" ];
   outputs-builder = channels: {
     formatter = channels.nixpkgs.nixpkgs-fmt;
-    packages = {
-      inherit (inputs.home-manager.packages.aarch64-darwin) home-manager;
-      inherit (inputs.nix-darwin.packages.aarch64-darwin) darwin-rebuild;
+    packages = with inputs; {
+      inherit (home-manager.packages.aarch64-darwin) home-manager;
+      inherit (nix-darwin.packages.aarch64-darwin) darwin-rebuild;
     };
   };
   channels-config = {

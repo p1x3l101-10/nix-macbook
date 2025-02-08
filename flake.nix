@@ -47,6 +47,8 @@
     experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
     cores = 2;
     max-jobs = 4;
+    # Nonstandard store means no substituters
+    # Suppress the warning I get for that
     substitute = false;
   };
 }

@@ -14,6 +14,8 @@ in {
       # Jobs w/ 2 cores each, for 8 cores used in total
       cores = 2;
       max-jobs = 4;
+      # Nonstandard store means no substituters
+      # Suppress the warning I get for that
       substitute = false;
     };
   };

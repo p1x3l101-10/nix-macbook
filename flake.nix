@@ -46,6 +46,7 @@
   nixConfig = {
     experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
     cores = 2;
-      max-jobs = 4;
+    max-jobs = 4;
+    substitute = false;
   };
 }

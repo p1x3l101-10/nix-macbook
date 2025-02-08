@@ -14,6 +14,7 @@ in {
       # Jobs w/ 2 cores each, for 8 cores used in total
       cores = 2;
       max-jobs = 4;
+      substitute = false;
     };
   };
 }

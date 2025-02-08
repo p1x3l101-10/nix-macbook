@@ -17,5 +17,6 @@ in {
       # I dont get nice things...
       substitute = false;
     };
+    registry = inputs.nixos-home.lib.confTemplates.registry inputs;
   };
 }

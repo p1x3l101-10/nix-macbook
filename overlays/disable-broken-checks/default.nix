@@ -6,6 +6,7 @@ lib.internal.nixpkgs-tools.disableChecks {
   inherit prev;
   packageList = [
     "xmlto"
+    "nix" # Scary!
   ];
   pythonPackageList = [
     "pytest-xdist"

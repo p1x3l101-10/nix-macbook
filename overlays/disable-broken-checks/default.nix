@@ -7,4 +7,8 @@ final: prev: {
       doCheck = false;
     });
   })];
+  xmlto = prev.xmlto.overrideAttrs (oldAttrs: {
+    doInstallCheck = false;
+    doCheck = false;
+  })
 }

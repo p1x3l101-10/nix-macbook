@@ -1,8 +1,12 @@
 {
   inputs = {
-    nixos-home.url = "github:p1x3l101-10/nixos";
+    nixos-home = {
+      url = "github:p1x3l101-10/nixos";
+      inputs.systems.follows = "systems";
+    };
     nixpkgs.follows = "nixos-home/nixpkgs";
     snowfall-lib.follows = "nixos-home/snowfall-lib";
+    systems.url = "github:nix-systems/aarch64-darwin";
     nix-darwin = {
       url = "github:LnL7/nix-darwin/nix-darwin-24.11";
       inputs.nixpkgs.follows = "nixpkgs";

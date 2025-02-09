@@ -9,7 +9,7 @@ in lib.mkFlake {
     nix-darwin.darwinModules.nix-darwin
     home-manager.darwinModules.home-manager
   ];
-  supportedSystems = [ "aarch64-darwin" ];
+  supportedSystems = import inputs.systems;
   outputs-builder = channels: {
     formatter = channels.nixpkgs.nixpkgs-fmt;
     packages = with inputs; {

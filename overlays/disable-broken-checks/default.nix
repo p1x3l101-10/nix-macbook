@@ -2,7 +2,7 @@
 
 final: prev:
 
-lib.overlay.disableChecks {
+lib.internal.overlay.disableChecks {
   inherit prev;
   packageList = [
     "xmlto"

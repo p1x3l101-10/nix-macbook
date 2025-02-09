@@ -7,12 +7,12 @@
 }@args:
 
 let
-  disableForEach = list: lib.lists.forEach (x: lib.internal.overlay.disableCheck prev x) list;
+  disableCheck = lib.internal.internal.callLibPrimitive ./disableCheck.nix;
+  disableForEach = list: lib.nixpkgs.lists.forEach list (name: disableCheck { inherit prev name; });
 in
 
-lib.nixos-home.attrsets.mergeAttrs (disableForEach [
-  # Normal packages
-]) ++ [
+lib.internal.attrsets.mergeAttrs ((disableForEach args.packageList
+) ++ [
   # Python packages
   (lib.modules.mkIf (pythonPackageList != []) {
     pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
@@ -20,4 +20,4 @@ lib.nixos-home.attrsets.mergeAttrs (disableForEach [
     ];
   })
   # Extra stuff to merge (custom check rules)
-] ++ extraMerge
+] ++ extraMerge)

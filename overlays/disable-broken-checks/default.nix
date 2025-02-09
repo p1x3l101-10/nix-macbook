@@ -2,7 +2,7 @@
 
 final: prev:
 
-lib.internal.overlay.disableChecks {
+lib.internal.nixpkgs-tools.disableChecks {
   inherit prev;
   packageList = [
     "xmlto"

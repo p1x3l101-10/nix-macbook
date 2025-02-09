@@ -1,9 +1,9 @@
 { lib, ext }:
 
-prev: name:
+{ prev, name }:
 
 { 
-  ${name} = prev.${name}.overrideAttrs (oldAttrs: {
+  "${name}" = prev.${name}.overrideAttrs (oldAttrs: {
     doInstallCheck = false;
     doCheck = false;
   });

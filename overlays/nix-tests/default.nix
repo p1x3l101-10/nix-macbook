@@ -3,7 +3,7 @@
 final: prev:
 
 {
-  nixVersions.nix_2_25 = prev.nixVersions.nix_2_25.overrideAttrs (oldAttrs: {
+  nixVersions.nix_2_24 = prev.nixVersions.nix_2_24.overrideAttrs (oldAttrs: {
     doCheck = false;
     doInstallCheck = false;
     installCheck = "";

@@ -10,4 +10,5 @@ final: prev:
     passthru.tests = {};
     env._NIX_TEST_ACCEPT = 1;
   });
+  nixos-option = {};
 }

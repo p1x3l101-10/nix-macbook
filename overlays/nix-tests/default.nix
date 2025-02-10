@@ -8,5 +8,6 @@ final: prev:
     doInstallCheck = false;
     installCheck = "";
     passthru.tests = {};
+    env._NIX_TEST_ACCEPT = 1;
   });
 }

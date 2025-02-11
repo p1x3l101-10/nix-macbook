@@ -16,6 +16,9 @@ in {
       max-jobs = 4;
       # I dont get nice things...
       substitute = false;
+      # Preserve build deps
+      keep-outputs = true;
+      keep-derivations = true;
     };
     registry = inputs.nixos-home.lib.confTemplates.registry inputs;
   };

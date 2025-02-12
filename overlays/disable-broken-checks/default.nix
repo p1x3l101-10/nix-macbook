@@ -14,7 +14,7 @@ lib.internal.nixpkgs-tools.disableChecks {
     {
       name = "xmlto"; src = builtins.fetchGit {
         url = "https://pagure.io/xmlto.git";
-        rev = "635dcd5bc84a7b67a3a2050a179d96e1d3050b15 ";
+        rev = "635dcd5bc84a7b67a3a2050a179d96e1d3050b15";
       };
     }
   ];

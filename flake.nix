@@ -7,14 +7,14 @@
     nixpkgs.follows = "nixos-home/nixpkgs";
     snowfall-lib.follows = "nixos-home/snowfall-lib";
     systems.url = "github:nix-systems/aarch64-darwin";
-    nix-darwin = {
+    darwin = {
       url = "github:LnL7/nix-darwin/nix-darwin-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-homebrew = {
       url = "github:zhaofengli-wip/nix-homebrew";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.nix-darwin.follows = "nix-darwin";
+      inputs.nix-darwin.follows = "darwin";
     };
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";

@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../../home/base/nix.nix # nix package stuff
+    ./nix.nix # nix package stuff
   ];
-  system.stateVersion = 6;
+  system.stateVersion = 5;
 }

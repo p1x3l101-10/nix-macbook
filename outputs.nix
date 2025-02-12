@@ -6,15 +6,16 @@ inputs: let
 in lib.mkFlake {
   systems.modules.darwin = with inputs; [
     nix-homebrew.darwinModules.nix-homebrew
-    nix-darwin.darwinModules.nix-darwin
     home-manager.darwinModules.home-manager
   ];
   supportedSystems = import inputs.systems;
   outputs-builder = channels: {
     formatter = channels.nixpkgs.nixpkgs-fmt;
     packages = with inputs; {
-      inherit (home-manager.packages.aarch64-darwin) home-manager;
-      inherit (nix-darwin.packages.aarch64-darwin) darwin-rebuild;
+      inherit (darwin.packages.aarch64-darwin) darwin-rebuild;
+      home-manager = home-manager.packages.aarch64-darwin.home-manager.override {
+        pkgs.nixos-option = "";
+      };
     };
   };
   channels-config = {

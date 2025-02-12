@@ -4,6 +4,7 @@ let
   appDir = pfx + "/Applications";
   user = "sblatt";
 in {
+  /*
   homebrew = {
     enable = true;
     brewPrefix = pfx;
@@ -21,6 +22,7 @@ in {
       cleanup = "uninstall";
     };
   };
+  */
   nix-homebrew.prefixes."${pfx}" = {
     enable = true;
     inherit user;

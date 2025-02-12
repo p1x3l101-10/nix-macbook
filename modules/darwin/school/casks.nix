@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  homebrew.nix-homebrew.prefixes."/private/var/tmp/homebrew".casks = [
+  nix-homebrew.prefixes."/private/var/tmp/homebrew".casks = [
     "calibre"
     "fjordlauncher"
     "hyper"

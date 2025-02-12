@@ -1,0 +1,3 @@
+[submodule "packages/home-manager/submodule"]
+	path = packages/home-manager/submodule
+	url = https://github.com/nix-community/home-manager

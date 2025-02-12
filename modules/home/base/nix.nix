@@ -3,11 +3,11 @@ let
   pfx = "/private/var/tmp/nix";
 in {
   nix = {
-    package = lib.mkDefault (pkgs.nixVersions.latest.override {
+    package = pkgs.nixVersions.latest.override {
       storeDir = "${pfx}/store";
       stateDir = "${pfx}/var";
       confDir = "${pfx}/etc";
-    });
+    };
     settings = {
       experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
       substituters = lib.mkForce []; # Diff nix store dir
@@ -20,6 +20,6 @@ in {
       keep-outputs = true;
       keep-derivations = true;
     };
-    registry = inputs.nixos-home.lib.confTemplates.registry inputs;
+    registry = inputs.nixos-home.lib.conf-templates.registry inputs;
   };
 }

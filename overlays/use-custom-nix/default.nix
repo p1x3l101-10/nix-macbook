@@ -7,7 +7,7 @@ let
 in
 
 {
-  nixos-option.override = {
+  nixos-option = prev.nixos-option.override {
     nix = nixPkg;
   };
 }

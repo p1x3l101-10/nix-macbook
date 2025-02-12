@@ -15,7 +15,6 @@ in lib.mkFlake {
     packages = with inputs; {
       inherit (home-manager.packages.aarch64-darwin) home-manager;
       inherit (nix-darwin.packages.aarch64-darwin) darwin-rebuild;
-      nix = (import ./modules/home/base/nix.nix { inherit lib; pkgs = (nixpkgs.legacyPackages.aarch64-darwin); inputs = {}; }).nix.package;
     };
   };
   channels-config = {

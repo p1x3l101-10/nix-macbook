@@ -7,6 +7,7 @@
     nixpkgs.follows = "nixos-home/nixpkgs";
     snowfall-lib.follows = "nixos-home/snowfall-lib";
     systems.url = "github:nix-systems/aarch64-darwin";
+    home-manager.follows = "nixos-home/home-manager";
     darwin = {
       url = "github:LnL7/nix-darwin/nix-darwin-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -15,10 +16,6 @@
       url = "github:zhaofengli-wip/nix-homebrew";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.nix-darwin.follows = "darwin";
-    };
-    home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
     # Homebrew taps
     homebrew-core = {
